@@ -1,0 +1,153 @@
+.container {
+    margin: 18px 20px;
+    text-align: center;
+  }
+  
+  .bodyText {
+    color: #544f57;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0px; /* 0% */
+    letter-spacing: -0.5px;
+  }
+  
+  .pinkText {
+    color: #fc939e;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0px;
+    letter-spacing: -0.5px;
+  }
+  
+  .descriptionText {
+    color: #544f57;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 166.667% */
+    letter-spacing: -0.5px;
+    text-align: start;
+  }
+  
+  .contentContainer {
+    text-align: start;
+    margin: 18px auto;
+  }
+  
+  .highlightText {
+    color: #544f57;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 133.333% */
+    letter-spacing: -0.5px;
+  }
+  
+  .contentText {
+    color: #544f57;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 153.846% */
+    letter-spacing: -0.5px;
+  }
+  
+  .orangeBox {
+    border-radius: 10px;
+    background: #ffe8c5;
+    margin: 3px 4px;
+    color: #000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 133.333% */
+    letter-spacing: -0.5px;
+  }
+  
+  .blueBox {
+    border-radius: 10px;
+    background: #c4e7ff;
+    margin: 3px 4px;
+    color: #000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 133.333% */
+    letter-spacing: -0.5px;
+  }
+  
+  .greenBox {
+    border-radius: 10px;
+    background: #f3ffcd;
+    margin: 3px 4px;
+    color: #000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 133.333% */
+    letter-spacing: -0.5px;
+  }
+  
+  .pinkBox {
+    border-radius: 10px;
+    background: #ffdad4;
+    margin: 3px 4px;
+    color: #000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 133.333% */
+    letter-spacing: -0.5px;
+  }
+  
+  .divider {
+    border: none;
+    height: 1px;
+    background-image: linear-gradient(90deg, transparent 50%, #544f57 50%);
+    background-size: 1.2px 1px;
+    background-repeat: repeat-x;
+  }
+  
+  .image1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .image2 {
+    margin-top: 47px;
+    margin-bottom: 20px;
+  }
+  
+  .image3 {
+    margin-top: 46px;
+  }
+  

@@ -6,6 +6,7 @@ import { getUserInfo } from './libs/api/user';
 
 // component
 import DefaultLayout from './components/layout/DefaultLayout';
+import HomePage from './pages/HomePage';
 
 
 
@@ -15,7 +16,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* <Route path="/sample" element={<SamplePage/> } /> */}
+         <Route path="" element={<HomePage/> } />
 
 </Routes>
     </Router>
