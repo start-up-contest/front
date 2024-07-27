@@ -9,6 +9,22 @@ function HomePage() {
   useEffect(() => {
     setContent(
       <div className={styles.container}>
+        <div className={styles.searchRowComponent}>
+          <div className={styles.searchListBox}></div>
+          <div className={styles.searchBox}></div>
+        </div>
+        <div className={styles.titleContainer}>
+          <div className={styles.titleHighlightText}>
+            나를 도와줄 <br />
+            한국의 튜터를 찾아드려요
+          </div>
+          <div className={styles.titleDescriptionText}>
+            내게 딱 맞는 튜터? 간단한 테스트로 찾기!
+          </div>
+          <div className={styles.titleButton} onPress={() => {}} variant="primary">
+            튜터 찾기
+          </div>
+        </div>
         <div className={styles.roomRowComponent}>
           <div className={styles.roomButtonBox}>
             <div className={styles.roomButtonTitleText}>원 / 투룸</div>
