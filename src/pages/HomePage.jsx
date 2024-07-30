@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from "react";
 import {useParams} from "react-router-dom";
 import styles from "./HomePage.module.css";
+import TutorProfileCardComponent from "../components/TutorProfileCardComponent";
+import tutorImg1 from "../assets/images/profile_1.jpeg";
 
 function HomePage() {
   const {} = useParams();
@@ -21,7 +23,11 @@ function HomePage() {
           <div className={styles.titleDescriptionText}>
             내게 딱 맞는 튜터? 간단한 테스트로 찾기!
           </div>
-          <div className={styles.titleButton} onPress={() => {}} variant="primary">
+          <div
+            className={styles.titleButton}
+            onPress={() => {}}
+            variant="primary"
+          >
             튜터 찾기
           </div>
         </div>
@@ -82,6 +88,15 @@ function HomePage() {
             </div>
           </div>
         </div>
+        <TutorProfileCardComponent
+          image={tutorImg1}
+          university={"중앙대학교"}
+          name={"이가은"}
+          description={
+            "활발한 성격이에요! 부동산은 물론 다양한 학교 근처 생활 꿀팁도 알려드릴게요!"
+          }
+          language={["일본어", "영어"]}
+        />
       </div>
     );
   });
