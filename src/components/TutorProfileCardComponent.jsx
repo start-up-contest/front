@@ -9,6 +9,7 @@ function TutorProfileCardComponent({
   star,
   description,
   language,
+  option
 }) {
   const {} = useParams();
   const [content, setContent] = useState(null);
@@ -21,7 +22,14 @@ function TutorProfileCardComponent({
         <div className={styles.contentText}>{name} 튜터</div>
         <div className={styles.contentText}>{description}</div>
         <div className={styles.optionContainer}>
-          {language.map((text, i) => {
+          {language?.map((text, i) => {
+            return (
+              <div className={styles.languageBox}>
+                <span className={styles.contentText}>{text}</span>
+              </div>
+            );
+          })}
+          {option?.map((text, i) => {
             return (
               <div className={styles.optionBox}>
                 <span className={styles.contentText}>{text}</span>

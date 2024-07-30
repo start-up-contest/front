@@ -3,6 +3,11 @@ import {useParams} from "react-router-dom";
 import styles from "./HomePage.module.css";
 import TutorProfileCardComponent from "../components/TutorProfileCardComponent";
 import tutorImg1 from "../assets/images/profile_1.jpeg";
+import bg_img from "../assets/images/bg_img.png";
+import search_svg from "../assets/icons/search.svg";
+import bottom_triangle from "../assets/icons/bottom_triangle.svg";
+import left_arrow_mint from "../assets/icons/left_arrow_mint.svg";
+import right_arrow_mint from "../assets/icons/right_arrow_mint.svg";
 
 function HomePage() {
   const {} = useParams();
@@ -11,27 +16,42 @@ function HomePage() {
   useEffect(() => {
     setContent(
       <div className={styles.container}>
-        <div className={styles.searchRowComponent}>
-          <div className={styles.searchListBox}></div>
-          <div className={styles.searchBox}></div>
+        <div className={styles.background}>
+          <div className={styles.searchRowComponent}>
+            <div className={styles.searchListBox}>
+              {" "}
+              <img
+                src={bottom_triangle}
+                className={styles.bottom_triangle}
+              ></img>
+              language
+            </div>
+            <div className={styles.searchBox}>
+              <img src={search_svg} className={styles.searchIcon}></img>
+              <input
+                className={styles.searchInput}
+                placeholder="대학, 지하철, 지역 등을 검색해 보세요."
+              ></input>
+            </div>
+          </div>
+          <div className={styles.titleContainer}>
+            <div className={styles.titleHighlightText}>
+              나를 도와줄 <br />
+              한국의 튜터를 찾아드려요
+            </div>
+            <div className={styles.titleDescriptionText}>
+              내게 딱 맞는 튜터? 간단한 테스트로 찾기!
+            </div>
+            <div
+              className={styles.titleButton}
+              onPress={() => {}}
+              variant="primary"
+            >
+              튜터 찾기
+            </div>
+          </div>
         </div>
-        <div className={styles.titleContainer}>
-          <div className={styles.titleHighlightText}>
-            나를 도와줄 <br />
-            한국의 튜터를 찾아드려요
-          </div>
-          <div className={styles.titleDescriptionText}>
-            내게 딱 맞는 튜터? 간단한 테스트로 찾기!
-          </div>
-          <div
-            className={styles.titleButton}
-            onPress={() => {}}
-            variant="primary"
-          >
-            튜터 찾기
-          </div>
-        </div>
-        <div className={styles.roomRowComponent}>
+        <div className={styles.roomRowComponent} style={{marginTop: "100px"}}>
           <div className={styles.roomButtonBox}>
             <div className={styles.roomButtonTitleText}>원 / 투룸</div>
             <div className={styles.roomButtonDescriptionText}>
@@ -59,7 +79,10 @@ function HomePage() {
             </div>
           </div>
         </div>
-        <div className={styles.roomRowComponent}>
+        <div
+          className={styles.roomRowComponent}
+          style={{marginBottom: "100px"}}
+        >
           <div className={styles.roomButtonBox}>
             {" "}
             <div className={styles.roomButtonTitleText}>추천 매물보기</div>
@@ -88,15 +111,54 @@ function HomePage() {
             </div>
           </div>
         </div>
-        <TutorProfileCardComponent
-          image={tutorImg1}
-          university={"중앙대학교"}
-          name={"이가은"}
-          description={
-            "활발한 성격이에요! 부동산은 물론 다양한 학교 근처 생활 꿀팁도 알려드릴게요!"
-          }
-          language={["일본어", "영어"]}
-        />
+        <div className={styles.tutorHighlightText}>
+          인기있는 <span className={styles.tutorMintText}>부동산 튜터</span>를
+          추천드려요
+        </div>
+        <div className={styles.tutorRowComponent}>
+          <img src={left_arrow_mint} className={styles.left_arrow_mint}></img>
+          <TutorProfileCardComponent
+            image={tutorImg1}
+            university={"중앙대학교"}
+            name={"이가은"}
+            description={
+              "활발한 성격이에요! 부동산은 물론 다양한 학교 근처 생활 꿀팁도 알려드릴게요!"
+            }
+            language={["일본어", "영어"]}
+            option={["자취경력 3년"]}
+          />{" "}
+                    <TutorProfileCardComponent
+            image={tutorImg1}
+            university={"중앙대학교"}
+            name={"이하영"}
+            description={
+              "영어, 불어 능통자! 모르는 것이 있으면 언제든지 물어봐주세요~"
+            }
+            language={["불어", "영어"]}
+          />
+          <TutorProfileCardComponent
+            image={tutorImg1}
+            university={"숭실대학교"}
+            name={"서지영"}
+            description={
+              "상도역, 숭실대 입구역은 모두 꿰뚫고 있습니다! 연락주세요."
+            }
+            language={["영어"]}
+            option={["자취경력 4년"]}
+          />{" "}
+          <TutorProfileCardComponent
+            image={tutorImg1}
+            university={"중앙대학교"}
+            name={"문벼리"}
+            description={
+              "중국어, 영어 다 가능합니다! 편하게 연락주세요~!"
+            }
+            language={["중국어", "영어"]}
+            option={["자취경력 1년"]}
+          />{" "}
+
+          <img src={right_arrow_mint} className={styles.right_arrow_mint}></img>
+        </div>
       </div>
     );
   });
