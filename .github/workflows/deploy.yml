@@ -42,18 +42,11 @@ jobs:
     needs: build-and-upload
     runs-on: [ self-hosted, prod ]
     steps:
-
-      - name: Remove previous version app
-        run: rm -rf build
-
       - name: Download build file from artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v3
         with:
           name: FrontendApplication
-          path: build
-
-      - name: debug current dir
-        run: pwd
+          path: /home/ubuntu/front/
 
       - name: Deploy Frontend
-        run: /home/ubuntu/actions-runner/_work/front/front/run.sh
+        run: /home/ubuntu/front/run.sh
