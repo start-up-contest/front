@@ -50,6 +50,6 @@ jobs:
         with:
           name: FrontendApplication
           path: /home/ubuntu/front/build
+
       - name: Run deployment script
-        working-directory: /home/ubuntu/front
-        run: ./run.sh
+        run: /home/ubuntu/front/run.sh
