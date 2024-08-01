@@ -46,7 +46,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: FrontendApplication
-          path: /home/ubuntu/front/
-
-      - name: Deploy Frontend
-        run: /home/ubuntu/front/run.sh
+          path: /home/ubuntu/front/build
+      - name: Run deployment script
+        working-directory: /home/ubuntu/front
+        run: ./run.sh
