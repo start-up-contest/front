@@ -1,0 +1,24 @@
+name: konnect Deploy
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: 빌드
+    runs-on: ubuntu-22.04
+    steps:
+      - name: workflow_dispatch에서 지정한 branch로 checkout
+        uses: actions/checkout@v3
+
+  deploy:
+    needs: build
+    name: 배포
+    runs-on: [ self-hosted, prod ]
+    steps:
+      - name: 디렉토리 이동
+        run:
+          cd /home/ubuntu/front
+      - name: 배포
+        run:
+          git pull origin main
