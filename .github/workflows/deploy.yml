@@ -53,4 +53,4 @@ jobs:
           path: build
 
       - name: Deploy Frontend
-        run: nohup serve -s build &
+        run: ./run.sh
