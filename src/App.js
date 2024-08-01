@@ -7,6 +7,7 @@ import { getUserInfo } from './libs/api/user';
 // component
 import DefaultLayout from './components/layout/DefaultLayout';
 import HomePage from './pages/HomePage';
+import TutorPage from './pages/TutorPage';
 
 
 
@@ -17,6 +18,7 @@ function App() {
     <Router>
       <Routes>
          <Route path="" element={<HomePage/> } />
+         <Route path="/tutor" element={<TutorPage/> } />
 
 </Routes>
     </Router>
