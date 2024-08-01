@@ -3,6 +3,9 @@ name: frontend deploy
 on:
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   build-and-upload:
     runs-on: ubuntu-22.04
