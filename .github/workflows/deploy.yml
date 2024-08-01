@@ -45,6 +45,10 @@ jobs:
     needs: build-and-upload
     runs-on: [ self-hosted, prod ]
     steps:
+
+      - name: current branch name
+        run: pwd
+
       - name: Remove previous version app
         run: rm -rf front/build
 
