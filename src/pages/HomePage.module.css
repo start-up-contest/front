@@ -180,9 +180,9 @@
   text-align: start;
   color: #000;
   font-family: Inter;
-  font-size: 40px;
+  font-size: 38px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 100%; /* 50px */
   margin: auto 80px;
 }
@@ -190,10 +190,64 @@
 .tutorMintText {
   color: #01d1c4;
   font-family: Inter;
-  font-size: 40px;
+  font-size: 38px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 100%;
+}
+
+.guideHighlightText {
+  text-align: start;
+  color: #000;
+  font-family: Inter;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 50px */
+  margin: auto 80px;
+}
+
+.guideMintText {
+  color: #01d1c4;
+  font-family: Inter;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  cursor: pointer;
+}
+
+.guideMintText:hover {
+  text-decoration: underline;
+}
+
+.guideBackground {
+  display: flex;
+  padding: 65px 0px;
+  background: #eee;
+  margin: 100px 0px;
+  flex-direction: row;
+}
+
+.guideBodyText {
+  margin: 50px 80px;
+  color: #3d3d3d;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 26px */
+  text-align: start;
+}
+
+.guideBodyHighlightText {
+  opacity: var(--sds-size-stroke-border);
+  color: #3d3d3d;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
 }
 
 .left_arrow_mint {
@@ -203,4 +257,9 @@
 .right_arrow_mint {
   position: relative;
   left: 60px;
+}
+
+.guide_megaphone{
+  position: absolute;
+  right: 60px;
 }

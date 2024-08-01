@@ -8,6 +8,7 @@ import { getUserInfo } from './libs/api/user';
 import DefaultLayout from './components/layout/DefaultLayout';
 import HomePage from './pages/HomePage';
 import TutorPage from './pages/TutorPage';
+import GuidePage from './pages/GuidePage';
 
 
 
@@ -19,7 +20,7 @@ function App() {
       <Routes>
          <Route path="" element={<HomePage/> } />
          <Route path="/tutor" element={<TutorPage/> } />
-
+         <Route path="/guide" element={<GuidePage/> } />
 </Routes>
     </Router>
   );

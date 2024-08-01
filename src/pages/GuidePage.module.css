@@ -1,0 +1,207 @@
+.container {
+    top: 0px;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .background {
+    background-image: url("../assets/images/bg_img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+  }
+  
+  .titleContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 90px 100px;
+    gap: 50px;
+  }
+  
+  .roomRowComponent {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 80px;
+    gap: 0px 20px;
+  }
+  
+  .roomColumnComponent {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    flex: 1;
+    gap: 20px 0px;
+    box-sizing: border-box;
+  }
+  
+  .searchRowComponent {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 20px 80px;
+  }
+  
+  .tutorRowComponent {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 60px 60px;
+    justify-content: center;
+  }
+  
+  .searchListBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: rgba(243, 243, 243, 0.8);
+    backdrop-filter: blur(2px);
+    color: #767676;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 28px */
+  }
+  
+  .searchBox {
+    display: flex;
+    flex: 1;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: rgba(243, 243, 243, 0.8);
+    height: 50px;
+    backdrop-filter: blur(2px);
+  }
+  
+  .searchInput {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 10px 40px 10px 10px;
+    color: #000000;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 20px */
+  }
+  
+  .searchIcon {
+    width: 30px;
+    margin-left: 15px;
+  }
+  
+  .bottom_triangle {
+    width: 15px;
+    margin-right: 10px;
+  }
+  
+  .roomButtonBox {
+    display: flex;
+    height: 150px;
+    border-radius: 15px;
+    border: 1px solid #757575;
+    background: #f9f9f9;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-shrink: 0;
+    gap: 10px;
+    box-sizing: border-box;
+  }
+  
+  .titleButton {
+    display: flex;
+    width: 148px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #01d1c4;
+    color: #f3f3f3;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 20px */
+  }
+  
+  .titleHighlightText {
+    text-align: start;
+    color: #fff;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%; /* 50px */
+  }
+  
+  .titleDescriptionText {
+    text-align: start;
+    color: #fff;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 20px */
+  }
+  
+  .roomButtonTitleText {
+    padding: 10px 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 50px */
+  }
+  
+  .roomButtonDescriptionText {
+    padding: 10px 20px;
+    color: #767676;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 36px */
+  }
+  
+  .tutorHighlightText {
+    text-align: start;
+    color: #000;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 50px */
+    margin: auto 80px;
+  }
+  
+  .tutorMintText {
+    color: #01d1c4;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+  }
+  
+  .left_arrow_mint {
+    position: relative;
+    right: 60px;
+  }
+  .right_arrow_mint {
+    position: relative;
+    left: 60px;
+  }
+  
