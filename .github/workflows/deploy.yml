@@ -53,7 +53,7 @@ jobs:
           path: build
 
       - name: debug current dir
-        run : pwd
+        run: pwd
 
       - name: Deploy Frontend
-        run: ./run.sh
+        run: /home/ubuntu/actions-runner/_work/front/front/run.sh
