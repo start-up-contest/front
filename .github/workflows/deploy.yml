@@ -18,6 +18,9 @@ jobs:
           cache: "npm"
           cache-dependency-path: "**/package-lock.json"
 
+      - name: Check npm version
+        run : npm -v
+
       - name: Setup environment variables
         run: |
           cp .env .env.production
