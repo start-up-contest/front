@@ -26,6 +26,9 @@ jobs:
         run: |
           cp .env .env.production
 
+      - name: Set CI to false
+        run: echo "CI=false" >> $GITHUB_ENV  # CI 변수를 환경 변수로 설정
+
       - name: Install dependencies
         run: npm ci
 
