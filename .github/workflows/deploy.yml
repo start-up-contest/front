@@ -1,24 +1,54 @@
-name: konnect Deploy
+name: frontend deploy
 
 on:
   workflow_dispatch:
 
 jobs:
-  build:
-    name: 빌드
+  build-and-upload:
     runs-on: ubuntu-22.04
+
     steps:
-      - name: workflow_dispatch에서 지정한 branch로 checkout
-        uses: actions/checkout@v3
+      - name: Setup Repository
+        uses: actions/checkout@v4
+
+      - name: Setup node with cache
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: "npm"
+          cache-dependency-path: "**/package-lock.json"
+
+      - name: Setup environment variables
+        run: |
+          cp .env .env.production
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build App
+        run: npm run build
+
+      - name: Upload frontend build file to artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: FrontendApplication
+          path: build
 
   deploy:
-    needs: build
-    name: 배포
+    needs: build-and-upload
     runs-on: [ self-hosted, prod ]
     steps:
-      - name: 디렉토리 이동
-        run:
-          cd /home/ubuntu/front
-      - name: 배포
-        run:
-          git pull origin main
+      - name: Remove previous version app
+        run: rm -rf front/build
+
+      - name: Download build file from artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: FrontendApplication
+          path: front
+
+      - name: Deploy Frontend
+        working-directory: frontend
+        run: |
+          cd front/build
+          nohup serve -s . &
