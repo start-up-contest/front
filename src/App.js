@@ -9,6 +9,7 @@ import DefaultLayout from './components/layout/DefaultLayout';
 import HomePage from './pages/HomePage';
 import TutorPage from './pages/TutorPage';
 import GuidePage from './pages/GuidePage';
+import LoginPage from './pages/LoginPage';
 
 
 
@@ -21,6 +22,8 @@ function App() {
          <Route path="" element={<HomePage/> } />
          <Route path="/tutor" element={<TutorPage/> } />
          <Route path="/guide" element={<GuidePage/> } />
+         <Route path="/login" element={<LoginPage/> } />
+
 </Routes>
     </Router>
   );
