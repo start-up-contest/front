@@ -7,3 +7,12 @@ export function postRegister() {
         method: 'post'
     })
 }
+
+//로그인
+export function postLogin(request) {
+    return axiosClient({
+        url: '/login',
+        method: 'post',
+        data: request,
+    })
+}

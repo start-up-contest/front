@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import React, {useState, useEffect} from "react";
+import {useNavigate, useParams} from "react-router-dom";
 import styles from "./Header.module.css";
 
 import logo from "../assets/images/logo.png";
@@ -7,6 +7,7 @@ import logo from "../assets/images/logo.png";
 function Header() {
   const {} = useParams();
   const [content, setContent] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setContent(
@@ -18,7 +19,9 @@ function Header() {
           <div className={styles.textButton}>관심목록</div>
           <div className={styles.textButton}>방내놓기</div>
           <div className={styles.textButton}>메시지</div>
-          <div className={styles.mintButton}>로그인</div>
+          <div className={styles.mintButton} onClick={() => navigate("/login")}>
+            로그인
+          </div>
           <div className={styles.greyButton}>광고문의</div>
         </div>
       </div>

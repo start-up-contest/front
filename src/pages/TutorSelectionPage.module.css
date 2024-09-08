@@ -1,0 +1,186 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.modal {
+    background-color: #e7f6f8;
+    width: 1100px;
+    height: 650px;
+    position: absolute;
+    top: 144px;
+    left: 200px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #a6d4d8;
+    opacity: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.progressBar {
+    position: relative;
+    width: 388px;
+    height: 7px;
+    background-color: #D9D9D9;
+    border-radius: 3px;
+    margin-bottom: 30px;
+}
+
+.progress {
+    position: absolute;
+    width: 388px;
+    height: 7px;
+    background-color: #01D1C4;
+    border-radius: 3px;
+}
+
+.title {
+    font-size: 33px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #000000;
+}
+
+.tutorList {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 20px;
+}
+
+.tutorCard {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    border: 2px solid #d9d9d9;
+    border-radius: 8px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    text-align: left;
+}
+
+.tutorCard:hover {
+    background-color: #f0f0f0;
+    border-color: #01d1c4;
+}
+
+.selected {
+    background-color: #01d1c4;
+    border-color: #01bfb3;
+    color: #ffffff;
+}
+
+.tutorImage {
+    width: 100%;
+    height: 150px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.tutorInfo {
+    padding: 10px 0;
+}
+
+.university {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 5px;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.languages {
+    display: flex;
+    gap: 5px;
+}
+
+.language {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.experience {
+    font-size: 12px;
+    color: #666666;
+}
+
+.rating {
+    font-size: 14px;
+    color: #ffcc00;
+}
+
+.moreTutorsButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #01d1c4;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 30px;
+}
+
+.backButton, .nextButton {
+    width: 127px;
+    height: 45px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.backButton {
+    background-color: #d9d9d9;
+    border: 1px solid #e3e3e3;
+    color: #f5f5f5;
+}
+
+.nextButton {
+    background-color: #01d1c4;
+    border: 1px solid rgba(1, 209, 196, 0.53);
+    color: #f5f5f5;
+}

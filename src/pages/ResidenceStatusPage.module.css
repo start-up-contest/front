@@ -1,0 +1,111 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.modal {
+    background-color: #e7f6f8;
+    width: 1100px;
+    height: 550px;
+    position: absolute;
+    top: 144px;
+    left: 200px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #a6d4d8;
+    opacity: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.progressBar {
+    position: relative;
+    width: 388px;
+    height: 7px;
+    background-color: #D9D9D9;
+    border-radius: 3px;
+    margin-bottom: 30px;
+}
+
+.progress {
+    position: absolute;
+    width: 278px; /* 7단계 중 5단계 진행도를 나타냄 */
+    height: 7px;
+    background-color: #01D1C4;
+    border-radius: 3px;
+}
+
+.title {
+    font-size: 33px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #000000;
+}
+
+.optionsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.optionButton {
+    width: 240px;
+    height: 60px;
+    background-color: #ffffff;
+    border: 2px solid #d9d9d9;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.optionButton:hover {
+    background-color: #f0f0f0;
+}
+
+.selected {
+    background-color: #01d1c4;
+    color: #ffffff;
+    border-color: #01d1c4;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.backButton, .nextButton {
+    width: 127px;
+    height: 45px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.backButton {
+    background-color: #d9d9d9;
+    border: 1px solid #e3e3e3;
+    color: #f5f5f5;
+}
+
+.nextButton {
+    background-color: #01d1c4;
+    border: 1px solid rgba(1, 209, 196, 0.53);
+    color: #f5f5f5;
+}
