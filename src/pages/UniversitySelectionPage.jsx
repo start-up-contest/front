@@ -39,7 +39,6 @@ function UniversitySelectionPage() {
   return (
     <div className={styles.container}>
       <div className={styles.modal}>
-        <button className={styles.closeButton}>&times;</button>
         <h1 className={styles.title}>
           소속 대학교 혹은 인근에 위치한 대학교는 어디인가요?
         </h1>

@@ -1,9 +1,14 @@
 import React, {useState, useEffect} from "react";
-import {useNavigate, useParams} from "react-router-dom";
+import {useParams, useNavigate} from "react-router-dom";
 import styles from "./HomePage.module.css";
 import TutorProfileCardComponent from "../components/TutorProfileCardComponent";
+import Header from "../components/Header";
+import footer from "../assets/footer.svg";
+
 import tutorImg1 from "../assets/images/profile_1.jpeg";
 import bg_img from "../assets/images/bg_img.png";
+import guide_megaphone from "../assets/images/guide_megaphone.png";
+
 import search_svg from "../assets/icons/search.svg";
 import bottom_triangle from "../assets/icons/bottom_triangle.svg";
 import left_arrow_mint from "../assets/icons/left_arrow_mint.svg";
@@ -17,6 +22,7 @@ function HomePage() {
   useEffect(() => {
     setContent(
       <div className={styles.container}>
+        <Header />
         <div className={styles.background}>
           <div className={styles.searchRowComponent}>
             <div className={styles.searchListBox}>
@@ -157,6 +163,33 @@ function HomePage() {
           />{" "}
           <img src={right_arrow_mint} className={styles.right_arrow_mint}></img>
         </div>
+        <div className={styles.guideBackground}>
+          <div>
+            <div className={styles.guideHighlightText}>
+              부동산 유의사항은{" "}
+              <span
+                className={styles.guideMintText}
+                onClick={() => {
+                  navigate("/guide");
+                }}
+              >
+                여기
+              </span>
+              서 체크하세요
+            </div>
+            <div className={styles.guideBodyText}>
+              한국 생활의 시작!{" "}
+              <span className={styles.guideBodyHighlightText}>
+                Konnect에서 부동산 계약 시 주의사항
+              </span>
+              을 알려드려요.
+              <br />
+              가이드를 확인하시고 꼭 맞는 방 찾아보세요!
+            </div>
+          </div>
+          <img src={guide_megaphone} className={styles.guide_megaphone} />
+        </div>
+        <img src={footer} />
       </div>
     );
   });
