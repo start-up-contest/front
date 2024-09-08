@@ -1,131 +1,142 @@
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  height: 100vh;
 }
 
 .modal {
-    background-color: #e7f6f8;
-    width: 1100px;
-    height: 600px;
-    position: absolute;
-    top: 144px;
-    left: 200px;
-    border-radius: 10px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #a6d4d8;
-    opacity: 100;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 40px;
+  position: relative;
+  background-color: #e7f6f8;
+  width: 80%;
+  height: 80%;
+  border-radius: 10px 10px 10px 10px;
+  border-width: 2px 2px 2px 2px;
+  border-style: solid;
+  border-color: #a6d4d8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
 }
 
 .progressBar {
-    position: relative;
-    width: 388px;
-    height: 7px;
-    background-color: #D9D9D9;
-    border-radius: 3px;
-    margin: 20px 0;
+  position: relative;
+  width: 388px;
+  height: 7px;
+  background-color: #d9d9d9;
+  border-radius: 3px;
+  margin: 20px 0;
 }
 
 .progress {
-    position: absolute;
-    width: 90px;
-    height: 7px;
-    background-color: #01D1C4;
-    border-radius: 3px;
+  position: absolute;
+  width: 90px;
+  height: 7px;
+  background-color: #01d1c4;
+  border-radius: 3px;
 }
 
 .title {
-    font-size: 33px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    color: #000000;
+  font-size: 33px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #000000;
 }
 
 .options {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1000px;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+  margin-bottom: 30px;
 }
 
 .option {
-    flex: 1;
-    margin: 0 15px;
-    padding: 15px;
-    border: 2px solid #d9d9d9;
-    border-radius: 8px;
-    background-color: #ffffff;
-    cursor: pointer;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-    text-align: left;
+  flex: 1;
+  margin: 0 15px;
+  padding: 15px;
+  border: 2px solid #d9d9d9;
+  border-radius: 8px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  text-align: left;
 }
 
 .optionTitle {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .optionDescription {
-    font-size: 14px;
-    color: #666666;
+  font-size: 14px;
+  color: #666666;
 }
 
 .option:hover {
-    background-color: #f0f0f0;
-    border-color: #01d1c4;
+  background-color: #f0f0f0;
+  border-color: #01d1c4;
 }
 
 .selected {
-    background-color: #01d1c4;
-    border-color: #01bfb3;
-    color: #ffffff;
+  background-color: #01d1c4;
+  border-color: #01bfb3;
+  color: #ffffff;
 }
 
 .selected .optionTitle {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .selected .optionDescription {
-    color: #f5f5f5;
+  color: #f5f5f5;
 }
 
 .buttons {
-    display: flex;
-    justify-content: space-between;
-    width: 300px;
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
 }
 
-.backButton, .nextButton {
-    width: 127px;
-    height: 45px;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+.backButton,
+.nextButton {
+  width: 127px;
+  height: 45px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .backButton {
-    background-color: #d9d9d9;
-    border: 1px solid #e3e3e3;
-    color: #f5f5f5;
+  background-color: #d9d9d9;
+  border: 1px solid #e3e3e3;
+  color: #f5f5f5;
 }
 
 .nextButton {
-    background-color: #01d1c4;
-    border: 1px solid rgba(1, 209, 196, 0.53);
-    color: #f5f5f5;
+  background-color: #01d1c4;
+  border: 1px solid rgba(1, 209, 196, 0.53);
+  color: #f5f5f5;
+}
+.nextButton:hover{
+    text-decoration: underline;
 }

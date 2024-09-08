@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import styles from './TutorSelectionPage.module.css';
+import { useNavigate } from 'react-router-dom';
 
 const TutorSelectionPage = () => {
     const [selectedTutor, setSelectedTutor] = useState(null);
+    const navigate=useNavigate();
 
     const tutors = [
         {
@@ -75,10 +77,10 @@ const TutorSelectionPage = () => {
                         </div>
                     ))}
                 </div>
-                <button className={styles.moreTutorsButton}>더 많은 튜터 보기</button>
+                <button className={styles.moreTutorsButton} onClick={()=>navigate("")}>더 많은 튜터 보기</button>
                 <div className={styles.buttons}>
                     <button className={styles.backButton}>뒤로가기</button>
-                    <button className={styles.nextButton}>메인으로</button>
+                    <button className={styles.nextButton} onClick={()=>navigate("/")}>메인으로</button>
                 </div>
             </div>
         </div>
